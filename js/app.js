@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ─── Load Property (dummy data — template mode) ────────────────
 async function loadProperty() {
-  property = {
+  property = window.CLIENT_CONFIG?.property || {
     name: 'Horizon Resort & Café',
     tagline: 'Your riverside escape awaits',
     location: 'Riverside District, Karnataka, India',
@@ -56,6 +56,7 @@ async function loadProperty() {
       call_number: '+91 98765 43210'
     }
   };
+  if (window.CLIENT_CONFIG?.rooms) ROOMS = window.CLIENT_CONFIG.rooms;
   populatePage(property);
 }
 
@@ -100,6 +101,7 @@ function populatePage(p) {
 
 // ─── Load Photos (dummy data — template mode) ─────────────────
 async function loadPhotosFromApi() {
+  if (window.CLIENT_CONFIG?.photos) { PHOTOS = window.CLIENT_CONFIG.photos; return; }
   PHOTOS = [
     'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80',
     'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80',
@@ -608,7 +610,7 @@ function stopRoomSlider(roomId) {
 }
 
 // ─── Room Data ─────────────────────────────────────────────────
-const ROOMS = [
+let ROOMS = [
   {
     id: 'standard-king',
     name: 'Standard King Room',
@@ -1088,7 +1090,7 @@ document.addEventListener('keydown', e => {
 // ─── Section 7 — Reviews (dummy data — template mode) ──────────
 async function loadReviews() {
   try {
-    const data = {
+    const data = window.CLIENT_CONFIG?.reviews || {
       rating: 4.3,
       total: 134,
       source: 'google',

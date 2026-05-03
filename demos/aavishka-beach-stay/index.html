@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── Primary SEO ─────────────────────────────────────────── -->
+  <title id="page-title">Aavishka Beach Stay | Direct Booking | Kumta, Karnataka</title>
+  <meta name="description" id="page-desc" content="Book directly with Aavishka Beach Stay on Baada Beach, Kumta. Beach view double and family rooms, evening bonfires, and direct sea access. Safe, clean &amp; couple-friendly. Best rate guaranteed.">
+  <meta name="keywords" content="Aavishka Beach Stay, Kumta beach homestay, Baada Beach Kumta, Karnataka beach stay, Gudeangadi beach homestay, direct booking Karnataka coast">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://robsouz19.github.io/Resort-Template-Claude/demos/aavishka-beach-stay/">
+
+  <!-- ── Open Graph ─────────────────────────────────────────── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://robsouz19.github.io/Resort-Template-Claude/demos/aavishka-beach-stay/">
+  <meta property="og:title"       id="og-title"  content="Aavishka Beach Stay | Kumta, Karnataka">
+  <meta property="og:description" id="og-desc"   content="Safe, clean beach homestay directly on Baada Beach, Kumta. Beach view rooms for couples &amp; families. Bonfires, beach trekking &amp; Gokarna day trips.">
+  <meta property="og:image"       id="og-image"  content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80">
+  <meta property="og:site_name"   content="Aavishka Beach Stay">
+  <meta property="og:locale"      content="en_IN">
+
+  <!-- ── Twitter Card ──────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Aavishka Beach Stay | Kumta, Karnataka">
+  <meta name="twitter:description" content="Beachfront homestay directly on Baada Beach, Kumta. Safe, clean, beach view rooms. Book direct.">
+  <meta name="twitter:image"       content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80">
+
+  <!-- ── JSON-LD Structured Data ───────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Aavishka Beach Stay",
+    "description": "A safe, spotlessly clean beachfront homestay directly on the Kumta–Gokarna Baada Beach. Beach view rooms for couples and families, evening bonfires, beach trekking and genuine Konkani hospitality.",
+    "telephone": "+919535347917",
+    "email": "aavishkabeachstay@gmail.com",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, UPI",
+    "checkinTime": "11:00",
+    "checkoutTime": "10:00",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "242 Madari Road, Gudeangadi",
+      "addressLocality": "Kumta",
+      "addressRegion": "Karnataka",
+      "postalCode": "581343",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "14.4960",
+      "longitude": "74.3880"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Beachfront Location",  "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free WiFi",            "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Bonfire",              "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Beach Trekking",       "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Couple Friendly",      "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Family Rooms",         "value": true }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Flatpickr Date Picker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<!-- ───────────────────────────────────────────────────────────
+     TOP NAVIGATION
+──────────────────────────────────────────────────────────── -->
+<header class="site-header" id="navbar">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="logo-wrap">
+        <img src="images/logo.png" alt="Logo" class="logo-img" id="logo-img"
+             onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+        <div class="logo-fallback" id="logo-fallback">
+          <span id="logo-initial">A</span>
+        </div>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name" id="nav-property-name">Loading…</span>
+        <span class="brand-tagline" id="nav-tagline">Baada Beach, Kumta, Karnataka</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a href="tel:" id="nav-phone-link" class="nav-phone">
+        <i class="fas fa-phone-alt"></i>
+        <span id="nav-phone-text"></span>
+      </a>
+      <button class="btn-book-now" onclick="scrollToWidget()">Book Now</button>
+    </div>
+  </div>
+</header>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     SECTION 2 — PHOTO GALLERY
+──────────────────────────────────────────────────────────── -->
+<section class="gallery-section" id="section-2">
+  <div class="gallery-wrap">
+    <div class="gallery-viewer" id="gallery-viewer">
+      <div class="gv-track" id="gv-track"></div>
+      <button class="gv-arrow gv-prev" id="gv-prev" aria-label="Previous photo" onclick="gvSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="gv-arrow gv-next" id="gv-next" aria-label="Next photo" onclick="gvSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="gv-badge" id="gv-badge">1 / 8</div>
+      <button class="show-all-btn" onclick="openGalleryModal()">
+        <i class="fas fa-th-large"></i> Show all photos
+      </button>
+    </div>
+    <div class="gallery-thumbs-strip" id="gallery-thumbs-strip"></div>
+  </div>
+</section>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     SECTION 3 — PROPERTY HIGHLIGHTS
+──────────────────────────────────────────────────────────── -->
+<section class="highlights-section" id="section-3">
+  <div class="highlights-heading">
+    <h2>Why guests keep coming back</h2>
+    <p>A few things that make staying here genuinely different.</p>
+  </div>
+  <div class="highlights-inner">
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#1a6b8a;">
+        <i class="fas fa-umbrella-beach"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Directly ON Baada Beach</strong>
+        <span>Not "near the beach" — your room door opens directly onto the sand. The sea is your front yard.</span>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#2d7a4f;">
+        <i class="fas fa-shield-halved"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Safe &amp; Spotlessly Clean</strong>
+        <span>Aavishka is consistently rated for cleanliness and safety — a trusted choice for solo travellers and families.</span>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#d4650a;">
+        <i class="fas fa-fire"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Bonfire &amp; Beach Activities</strong>
+        <span>Evening bonfires, guided beach trekking, Gokarna adventures and weekend trips from Bangalore.</span>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#c0392b;">
+        <i class="fas fa-heart"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Couple &amp; Family Friendly</strong>
+        <span>A safe, welcoming environment for couples, families and groups — verified by our guests.</span>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#b8962e;">
+        <i class="fas fa-rotate-left"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Free Cancellation</strong>
+        <span>Cancel up to 7 days before check-in for a full refund — no questions, no penalties.</span>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#7b3fa0;">
+        <i class="fas fa-tag"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Best Rate Direct</strong>
+        <span>Book directly with us to get the lowest price — no booking platform fees or markups.</span>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <div class="hc-icon" style="--hc-color:#1a4731;">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <div class="hc-body">
+        <strong>Instant Confirmation</strong>
+        <span>Book directly with us — your reservation is confirmed immediately, no waiting required.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     SECTION 4 — PROPERTY GUIDE (TABBED)
+──────────────────────────────────────────────────────────── -->
+<section class="guide-section" id="section-4">
+  <div class="guide-heading">
+    <h2>Inside the Property</h2>
+    <p>Tap through each tab to explore the full picture before you book.</p>
+  </div>
+  <div class="guide-box">
+
+    <div class="tab-nav-outer">
+      <div class="tab-nav" role="tablist">
+        <button class="tab-btn active" data-tab="overview" role="tab"><i class="fas fa-house"></i><span>Overview</span></button>
+        <button class="tab-btn" data-tab="dining" role="tab"><i class="fas fa-utensils"></i><span>Dining</span></button>
+        <button class="tab-btn" data-tab="accommodation" role="tab"><i class="fas fa-bed"></i><span>Accommodation</span></button>
+        <button class="tab-btn" data-tab="amenities" role="tab"><i class="fas fa-layer-group"></i><span>Amenities</span></button>
+        <button class="tab-btn" data-tab="experiences" role="tab"><i class="fas fa-compass"></i><span>Experiences</span></button>
+        <button class="tab-btn" data-tab="nearby" role="tab"><i class="fas fa-location-dot"></i><span>Nearby</span></button>
+        <button class="tab-btn" data-tab="events" role="tab"><i class="fas fa-champagne-glasses"></i><span>Events</span></button>
+        <button class="tab-btn" data-tab="policies" role="tab"><i class="fas fa-clipboard-list"></i><span>Policies</span></button>
+      </div>
+    </div>
+
+    <div class="tab-panels">
+
+      <!-- OVERVIEW -->
+      <div class="tab-panel active" id="panel-overview">
+        <p class="tp-intro">A beachfront homestay directly on Baada Beach in Gudeangadi, Kumta — clean, safe, and genuinely hospitable on one of Karnataka's quietest shores.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a4731;"><i class="fas fa-building"></i></div>
+            <div class="tp-body"><strong>Property Type</strong><span>Beachfront homestay — beach view double rooms &amp; family rooms</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a6b8a;"><i class="fas fa-location-dot"></i></div>
+            <div class="tp-body"><strong>Location</strong><span>242 Madari Road, Gudeangadi, Kumta, Uttara Kannada — 581343</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#2d7a4f;"><i class="fas fa-umbrella-beach"></i></div>
+            <div class="tp-body"><strong>Setting</strong><span>Directly on Kumta–Gokarna Baada Beach — pristine sand and very few crowds</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-palette"></i></div>
+            <div class="tp-body"><strong>Vibe</strong><span>Warm · Authentic · Unhurried — coastal Karnataka hospitality at its best</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-users"></i></div>
+            <div class="tp-body"><strong>Capacity</strong><span>Rooms for couples (2) and families / groups (up to 6) · 6 room types</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#d4650a;"><i class="fas fa-language"></i></div>
+            <div class="tp-body"><strong>Languages</strong><span>Kannada, Konkani, Hindi &amp; English spoken by the hosts</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DINING -->
+      <div class="tab-panel" id="panel-dining">
+        <p class="tp-intro">Simple, fresh and local — the food here reflects the honest flavours of the Uttara Kannada coast.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a4731;"><i class="fas fa-sun"></i></div>
+            <div class="tp-body"><strong>Breakfast</strong><span>South Indian breakfast every morning — idli, dosa, poha &amp; fresh chai</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#b8962e;"><i class="fas fa-fish"></i></div>
+            <div class="tp-body"><strong>Coastal Meals</strong><span>Fresh catch, rice, sambar and coconut curries available on request</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-leaf"></i></div>
+            <div class="tp-body"><strong>Vegetarian Options</strong><span>Full vegetarian menu available — never an afterthought here</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#2d7a4f;"><i class="fas fa-fire"></i></div>
+            <div class="tp-body"><strong>Bonfire Snacks</strong><span>Evening snacks served at the beachside bonfire — corn, chai &amp; coastal bites</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-mug-hot"></i></div>
+            <div class="tp-body"><strong>Hot Beverages</strong><span>Filter coffee, masala chai and fresh coconut water throughout the day</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#d4650a;"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="tp-body"><strong>Nearby Eateries</strong><span>Local restaurants and seafood shacks within a short walk of the property</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCOMMODATION -->
+      <div class="tab-panel" id="panel-accommodation">
+        <p class="tp-intro">Two room types — both with direct beach views, attached bathrooms and a sea breeze that means you may not even miss the AC.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a6b8a;"><i class="fas fa-bed"></i></div>
+            <div class="tp-body"><strong>Beach View Double Room</strong><span>Double bed · Attached bathroom · Direct beach view · Wardrobe · Fan · WiFi</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a4731;"><i class="fas fa-users"></i></div>
+            <div class="tp-body"><strong>Beach View Family Room</strong><span>3 double beds · Attached bathroom · Beach view · Fits up to 6 guests</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-shower"></i></div>
+            <div class="tp-body"><strong>Bathrooms</strong><span>Private attached bathroom in every room · Clean &amp; well-maintained</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-wifi"></i></div>
+            <div class="tp-body"><strong>Connectivity</strong><span>Free WiFi available throughout the property</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#b8962e;"><i class="fas fa-broom"></i></div>
+            <div class="tp-body"><strong>Housekeeping</strong><span>Daily cleaning · Fresh towels · Free toiletries provided</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#d4650a;"><i class="fas fa-eye"></i></div>
+            <div class="tp-body"><strong>Views</strong><span>Every room faces the sea — wake up to the Arabian Sea each morning</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AMENITIES -->
+      <div class="tab-panel" id="panel-amenities">
+        <p class="tp-intro">Everything you need for a comfortable beach stay — included without fuss.</p>
+        <div class="tp-amenity-grid">
+          <div class="tp-amenity"><i class="fas fa-wifi" style="color:#1a4731;"></i><span>Free WiFi</span></div>
+          <div class="tp-amenity"><i class="fas fa-car" style="color:#b8962e;"></i><span>Shared Parking</span></div>
+          <div class="tp-amenity"><i class="fas fa-umbrella-beach" style="color:#1a6b8a;"></i><span>Direct Beach Access</span></div>
+          <div class="tp-amenity"><i class="fas fa-fire" style="color:#d4650a;"></i><span>Evening Bonfire</span></div>
+          <div class="tp-amenity"><i class="fas fa-shower" style="color:#c0392b;"></i><span>Attached Bathrooms</span></div>
+          <div class="tp-amenity"><i class="fas fa-fan" style="color:#7b3fa0;"></i><span>Ceiling Fans</span></div>
+          <div class="tp-amenity"><i class="fas fa-mug-hot" style="color:#b8962e;"></i><span>Breakfast Available</span></div>
+          <div class="tp-amenity"><i class="fas fa-person-hiking" style="color:#1a4731;"></i><span>Beach Trekking</span></div>
+          <div class="tp-amenity"><i class="fas fa-eye" style="color:#1a6b8a;"></i><span>Beach Views</span></div>
+          <div class="tp-amenity"><i class="fas fa-caretaker" style="color:#2d7a4f;"></i><span>Caretaker Service</span></div>
+          <div class="tp-amenity"><i class="fas fa-bell-concierge" style="color:#c0392b;"></i><span>24-hr Host</span></div>
+          <div class="tp-amenity"><i class="fas fa-shield-halved" style="color:#2d7a4f;"></i><span>Safe &amp; Secure</span></div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCES -->
+      <div class="tab-panel" id="panel-experiences">
+        <p class="tp-intro">Baada Beach is your playground — and Gokarna, Mirjan Fort and the Kumta estuary are all within easy reach.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a6b8a;"><i class="fas fa-person-swimming"></i></div>
+            <div class="tp-body"><strong>Swimming &amp; Beach</strong><span>Safe, clean and uncrowded — Baada Beach at its quietest and most beautiful</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#d4650a;"><i class="fas fa-fire"></i></div>
+            <div class="tp-body"><strong>Evening Bonfire</strong><span>Beachside bonfire every evening — perfect for unwinding and stargazing</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#2d7a4f;"><i class="fas fa-person-hiking"></i></div>
+            <div class="tp-body"><strong>Beach Trekking</strong><span>Guided coastal treks along the beach — explore the Karnataka shoreline</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-compass"></i></div>
+            <div class="tp-body"><strong>Gokarna Adventure</strong><span>Day trips to Gokarna's Om Beach, Half Moon Beach &amp; Mahabaleshwar Temple</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#b8962e;"><i class="fas fa-motorcycle"></i></div>
+            <div class="tp-body"><strong>Coastal Road Trips</strong><span>Rent a bike and explore the NH66 coastal highway at your own pace</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-monument"></i></div>
+            <div class="tp-body"><strong>Mirjan Fort</strong><span>~15 min · 4.2★ · 16th-century jungle fort — an easy and rewarding day trip</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEARBY -->
+      <div class="tab-panel" id="panel-nearby">
+        <p class="tp-intro">Gudeangadi is a quiet village on the Karnataka coast — close to everything, crowded by nothing.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-monument"></i></div>
+            <div class="tp-body"><strong>Mirjan Fort</strong><span>~15 min · 4.2★ · One of Karnataka's most beautiful and underrated forts</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a6b8a;"><i class="fas fa-umbrella-beach"></i></div>
+            <div class="tp-body"><strong>Gokarna Beaches</strong><span>~45 min · Om Beach, Kudle Beach, Half Moon Beach &amp; Paradise Beach</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#b8962e;"><i class="fas fa-place-of-worship"></i></div>
+            <div class="tp-body"><strong>Mahabaleshwar Temple, Gokarna</strong><span>~45 min · Ancient Shiva temple, one of the holiest in South India</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#2d7a4f;"><i class="fas fa-mountain"></i></div>
+            <div class="tp-body"><strong>Yana Rock Formation</strong><span>~1.5 hrs · Dramatic black limestone formations in dense jungle</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-water"></i></div>
+            <div class="tp-body"><strong>Aghanashini Estuary</strong><span>~10 min · Where the river meets the sea — a serene natural wonder</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a4731;"><i class="fas fa-plane"></i></div>
+            <div class="tp-body"><strong>Nearest Airport</strong><span>Dabolim (Goa) Airport · ~151 km · Hubli Airport · ~150 km</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EVENTS -->
+      <div class="tab-panel" id="panel-events">
+        <p class="tp-intro">A private beachfront property is a rare and beautiful setting for life's best moments.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#b8962e;"><i class="fas fa-rings-wedding"></i></div>
+            <div class="tp-body"><strong>Beach Weddings</strong><span>Intimate ceremonies directly on the sand at sunset — simple and unforgettable</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-heart"></i></div>
+            <div class="tp-body"><strong>Anniversaries</strong><span>Beach bonfire setup · Flowers · Private dinner by the sea</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-cake-candles"></i></div>
+            <div class="tp-body"><strong>Birthdays</strong><span>Bonfire celebration · Custom cake &amp; decorations on request</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a6b8a;"><i class="fas fa-users-rectangle"></i></div>
+            <div class="tp-body"><strong>Group Getaways</strong><span>Family rooms for groups of 6 · Beach activities &amp; bonfire included</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#2d7a4f;"><i class="fas fa-briefcase"></i></div>
+            <div class="tp-body"><strong>Wellness Retreats</strong><span>Beach yoga &amp; mindfulness retreats — contact us to arrange</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#d4650a;"><i class="fas fa-champagne-glasses"></i></div>
+            <div class="tp-body"><strong>Proposals</strong><span>Sunset beach setup with flowers and personalised touches</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POLICIES -->
+      <div class="tab-panel" id="panel-policies">
+        <p class="tp-intro">Clear and fair — so there are no surprises on either side.</p>
+        <div class="tp-grid">
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a4731;"><i class="fas fa-right-to-bracket"></i></div>
+            <div class="tp-body"><strong>Check-in</strong><span>From 11:00 AM · Early check-in subject to availability</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#c0392b;"><i class="fas fa-right-from-bracket"></i></div>
+            <div class="tp-body"><strong>Check-out</strong><span>By 10:00 AM · Late check-out available on request</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#b8962e;"><i class="fas fa-rotate-left"></i></div>
+            <div class="tp-body"><strong>Cancellation</strong><span>Full refund if cancelled 7+ days before check-in</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#7b3fa0;"><i class="fas fa-ban"></i></div>
+            <div class="tp-body"><strong>Groups</strong><span>Loud parties and stag/hen groups not permitted</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#2d7a4f;"><i class="fas fa-ban-smoking"></i></div>
+            <div class="tp-body"><strong>Smoking</strong><span>Not permitted indoors · Permitted in outdoor areas only</span></div>
+          </div>
+          <div class="tp-item">
+            <div class="tp-icon" style="--tc:#1a6b8a;"><i class="fas fa-volume-xmark"></i></div>
+            <div class="tp-body"><strong>Quiet Hours</strong><span>10:00 PM – 7:00 AM · Please respect the natural surroundings</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tab-panels -->
+  </div><!-- /guide-box -->
+</section>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     SECTION 5 — AVAILABILITY & ROOMS
+──────────────────────────────────────────────────────────── -->
+<section class="avail-section" id="section-5">
+  <div class="avail-heading">
+    <h2>Availability</h2>
+    <p>Select your dates to see which rooms are open and what they cost.</p>
+  </div>
+
+  <div class="avail-search-card">
+    <div class="asc-fields">
+      <div class="asc-field" id="asc-checkin-wrap">
+        <div class="asc-icon"><i class="fas fa-calendar-day"></i></div>
+        <div class="asc-body">
+          <label>CHECK-IN</label>
+          <input type="text" id="avail-checkin" placeholder="Select date" readonly>
+        </div>
+      </div>
+      <div class="asc-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="asc-field" id="asc-checkout-wrap">
+        <div class="asc-icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="asc-body">
+          <label>CHECK-OUT</label>
+          <input type="text" id="avail-checkout" placeholder="Select date" readonly>
+        </div>
+      </div>
+      <div class="asc-divider"></div>
+      <div class="asc-field asc-field-guests" id="as-guests-trigger" onclick="toggleGuestDropdown()">
+        <div class="asc-icon"><i class="fas fa-user-group"></i></div>
+        <div class="asc-body">
+          <label>GUESTS &amp; ROOMS</label>
+          <span id="as-guests-summary">2 adults · 1 room</span>
+        </div>
+        <i class="fas fa-chevron-down asc-chevron" id="as-guests-chevron"></i>
+        <div class="as-guests-panel" id="as-guests-panel" onclick="event.stopPropagation()">
+          <div class="asg-row">
+            <div class="asg-label"><strong>Adults</strong><span>Age 18+</span></div>
+            <div class="asg-counter">
+              <button class="asg-btn" onclick="adjustAvailGuest('adults',-1)">−</button>
+              <span id="asg-adults">2</span>
+              <button class="asg-btn" onclick="adjustAvailGuest('adults',1)">+</button>
+            </div>
+          </div>
+          <div class="asg-row">
+            <div class="asg-label"><strong>Children</strong><span>Age 0–17</span></div>
+            <div class="asg-counter">
+              <button class="asg-btn" onclick="adjustAvailGuest('children',-1)">−</button>
+              <span id="asg-children">0</span>
+              <button class="asg-btn" onclick="adjustAvailGuest('children',1)">+</button>
+            </div>
+          </div>
+          <div id="asg-child-ages"></div>
+          <div class="asg-row asg-row-rooms">
+            <div class="asg-label"><strong>Rooms</strong><span>Number of rooms</span></div>
+            <div class="asg-counter">
+              <button class="asg-btn" onclick="adjustAvailGuest('rooms',-1)">−</button>
+              <span id="asg-rooms">1</span>
+              <button class="asg-btn" onclick="adjustAvailGuest('rooms',1)">+</button>
+            </div>
+          </div>
+          <button class="asg-done" onclick="toggleGuestDropdown()">Done</button>
+        </div>
+      </div>
+    </div>
+    <button class="asc-btn" onclick="checkRoomAvailability()">
+      <i class="fas fa-magnifying-glass"></i>
+      <span>Check Availability</span>
+    </button>
+  </div>
+
+  <div class="avail-results-card">
+    <div class="avail-prompt" id="avail-prompt">
+      <div class="avail-prompt-icon"><i class="fas fa-calendar-days"></i></div>
+      <div>
+        <strong>Pick your dates above to see availability</strong>
+        <span>We'll show you exactly which rooms are open, their pricing, and what's included.</span>
+      </div>
+    </div>
+    <div class="room-list" id="room-list"></div>
+  </div>
+</section>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     SECTION 6 — MEET THE TEAM
+──────────────────────────────────────────────────────────── -->
+<section class="team-section" id="section-6">
+  <div class="team-intro">
+    <div class="team-intro-text">
+      <div class="team-heading">
+        <h2>The People Behind Your Stay</h2>
+        <p>When you book with us, you're not dealing with a system or a call centre. You're working directly with a small, dedicated team who genuinely cares about making your stay exceptional.</p>
+      </div>
+    </div>
+    <div class="team-intro-badge">
+      <i class="fas fa-handshake-simple"></i>
+      <span>Real people. Direct contact. Always.</span>
+    </div>
+  </div>
+  <div class="team-grid" id="team-grid"></div>
+  <div class="team-footer-note">
+    <i class="fas fa-circle-check"></i>
+    All team members are available directly — no middlemen, no automated responses. Someone will always pick up.
+  </div>
+</section>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     SECTION 7 — GUEST REVIEWS
+──────────────────────────────────────────────────────────── -->
+<section class="reviews-section-7" id="section-7">
+
+  <div class="rev7-heading">
+    <h2>What Our Guests Say</h2>
+    <p>Honest words from people who've stayed with us — unfiltered and unprompted.</p>
+  </div>
+
+  <div class="rev7-summary" id="rev7-summary">
+    <div class="rev7-score">
+      <span class="rev7-big-num" id="rev7-rating">4.1</span>
+      <div class="rev7-stars" id="rev7-stars"></div>
+      <span class="rev7-total" id="rev7-total">Based on 53 reviews</span>
+    </div>
+    <div class="rev7-bars">
+      <div class="rev7-bar-row"><span>5 ★</span><div class="rev7-track"><div class="rev7-fill" style="width:45%"></div></div><span>45%</span></div>
+      <div class="rev7-bar-row"><span>4 ★</span><div class="rev7-track"><div class="rev7-fill" style="width:36%"></div></div><span>36%</span></div>
+      <div class="rev7-bar-row"><span>3 ★</span><div class="rev7-track"><div class="rev7-fill" style="width:12%"></div></div><span>12%</span></div>
+      <div class="rev7-bar-row"><span>2 ★</span><div class="rev7-track"><div class="rev7-fill" style="width:5%"></div></div><span>5%</span></div>
+      <div class="rev7-bar-row"><span>1 ★</span><div class="rev7-track"><div class="rev7-fill" style="width:2%"></div></div><span>2%</span></div>
+    </div>
+    <div class="rev7-google-badge" id="rev7-google-badge" style="display:none;">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      <span>Live from Google Reviews</span>
+    </div>
+  </div>
+
+  <div class="rev7-slider-outer">
+    <button class="rev7-arrow rev7-prev" id="rev7-prev" onclick="revSlide(-1)" aria-label="Previous reviews" disabled>
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="rev7-slider-wrap">
+      <div class="rev7-grid" id="rev7-grid">
+        <div class="rev7-loading"><i class="fas fa-spinner fa-spin"></i> Loading reviews…</div>
+      </div>
+    </div>
+    <button class="rev7-arrow rev7-next" id="rev7-next" onclick="revSlide(1)" aria-label="Next reviews">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  <div class="rev7-dots" id="rev7-dots"></div>
+
+  <div class="rev7-map-wrap">
+    <iframe
+      class="rev7-map"
+      title="Aavishka Beach Stay Location"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Aavishka+Beach+Stay+Gudeangadi+Kumta+Karnataka&output=embed">
+    </iframe>
+  </div>
+
+</section>
+
+
+<!-- ───────────────────────────────────────────────────────────
+     FOOTER
+──────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="nav-logo">✦</span>
+      <span id="footer-name">Aavishka Beach Stay</span>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:aavishkabeachstay@gmail.com" id="footer-email-link">
+        <i class="fas fa-envelope"></i>
+        <span id="footer-email">aavishkabeachstay@gmail.com</span>
+      </a>
+      <a href="tel:+919535347917" id="footer-phone-link">
+        <i class="fas fa-phone"></i>
+        <span id="footer-phone">+91 95353 47917</span>
+      </a>
+    </div>
+    <p class="footer-copy">© 2025 <span id="footer-name-copy">Aavishka Beach Stay</span>. All rights reserved. · Direct bookings only — no commission fees.</p>
+  </div>
+</footer>
+
+
+<!-- Contact Widget -->
+<div id="contact-widget"></div>
+
+<!-- Booking Modal -->
+<div class="modal-overlay" id="booking-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('booking-modal')" aria-label="Close">&times;</button>
+    <div class="modal-header">
+      <h3>Complete Your Booking</h3>
+      <p>Fill in your details and we'll confirm your reservation directly.</p>
+    </div>
+    <form class="booking-form" id="booking-form" onsubmit="submitBooking(event)">
+      <div class="bf-row">
+        <div class="bf-field">
+          <label>Full Name *</label>
+          <input type="text" id="bf-name" placeholder="Your full name" required>
+        </div>
+        <div class="bf-field">
+          <label>Email Address *</label>
+          <input type="email" id="bf-email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-field">
+          <label>Phone / WhatsApp *</label>
+          <input type="tel" id="bf-phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <div class="bf-field">
+          <label>Number of Guests</label>
+          <input type="number" id="bf-guests" min="1" max="20" value="2">
+        </div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-field">
+          <label>Check-in Date</label>
+          <input type="text" id="bf-checkin" placeholder="DD/MM/YYYY" readonly>
+        </div>
+        <div class="bf-field">
+          <label>Check-out Date</label>
+          <input type="text" id="bf-checkout" placeholder="DD/MM/YYYY" readonly>
+        </div>
+      </div>
+      <div class="bf-field bf-field-full">
+        <label>Special Requests (optional)</label>
+        <textarea id="bf-requests" rows="3" placeholder="Any special requirements, dietary needs, arrival time…"></textarea>
+      </div>
+      <div class="bf-summary" id="bf-summary"></div>
+      <button type="submit" class="bf-submit" id="bf-submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="success-modal">
+  <div class="modal-box modal-box-success">
+    <div class="success-icon"><i class="fas fa-circle-check"></i></div>
+    <h3>Booking Confirmed!</h3>
+    <p>Thank you for booking directly with <strong id="success-prop-name">Aavishka Beach Stay</strong>. We'll be in touch within a few hours to confirm your stay.</p>
+    <div class="success-contact">
+      <p>Questions? Reach us directly:</p>
+      <a href="#" id="success-whatsapp-link" class="success-wa-btn">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+    <button class="bf-submit" onclick="closeModal('success-modal')">Done</button>
+  </div>
+</div>
+
+<!-- Gallery Modal -->
+<div class="modal-overlay gallery-modal-overlay" id="gallery-modal">
+  <div class="gallery-modal-box">
+    <button class="modal-close gallery-modal-close" onclick="closeModal('gallery-modal')" aria-label="Close">&times;</button>
+    <h3 class="gallery-modal-title">All Photos</h3>
+    <div class="gallery-modal-grid" id="gallery-modal-grid"></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <button class="lightbox-arrow lightbox-prev" onclick="lightboxSlide(-1)" aria-label="Previous">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <div class="lightbox-img-wrap">
+    <img id="lightbox-img" src="" alt="Property photo">
+  </div>
+  <button class="lightbox-arrow lightbox-next" onclick="lightboxSlide(1)" aria-label="Next">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+  <div class="lightbox-counter" id="lightbox-counter">1 / 10</div>
+</div>
+
+<!-- Room Photo Modal -->
+<div class="modal-overlay" id="room-photo-modal">
+  <div class="rpm-box">
+    <button class="modal-close" onclick="closeRoomPhotoModal()" aria-label="Close">&times;</button>
+    <div class="rpm-viewer">
+      <button class="rpm-arrow rpm-prev" id="rpm-prev" onclick="rpmSlide(-1)" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="rpm-track-wrap">
+        <div class="rpm-track" id="rpm-track"></div>
+      </div>
+      <button class="rpm-arrow rpm-next" id="rpm-next" onclick="rpmSlide(1)" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="rpm-badge" id="rpm-badge">1 / 3</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="config.js"></script>
+<script src="../../js/app.js"></script>
+</body>
+</html>

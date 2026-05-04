@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- Mountain peaks -->
+  <polygon points="60,55 85,18 110,55" fill="#1e4fa3" opacity="0.9"/>
+  <polygon points="90,55 112,28 134,55" fill="#d4a94a" opacity="0.95"/>
+  <!-- Sun arc -->
+  <path d="M 62 54 Q 97 10 138 54" fill="none" stroke="#d4a94a" stroke-width="2.5" opacity="0.5" stroke-dasharray="4 3"/>
+  <!-- Resort name text -->
+  <text x="100" y="72" text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="13" font-weight="700"
+        fill="#1e4fa3" letter-spacing="3">RESORT</text>
+</svg>

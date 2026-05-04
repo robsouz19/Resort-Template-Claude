@@ -81,34 +81,45 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
 }
 
 .logo-wrap {
-  width: 52px;
-  height: 52px;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 64px;
+  height: 56px;
   flex-shrink: 0;
-  border: 2px solid var(--border);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  background: var(--bg);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo-img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  padding: 4px;
+  filter: drop-shadow(0 1px 6px rgba(0,0,0,0.18));
 }
 .logo-fallback {
   display: none;
-  width: 100%;
-  height: 100%;
+  width: 58px;
+  height: 52px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--gold) 0%, #a07828 100%);
-  font-family: 'Playfair Display', serif;
+  flex-direction: column;
+  gap: 3px;
+  border: 1.5px dashed rgba(30,79,163,0.35);
+  border-radius: 8px;
+}
+.logo-fallback i {
   font-size: 1.5rem;
+  color: var(--gold);
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));
+}
+.logo-fallback .logo-placeholder-text {
+  font-size: 0.45rem;
   font-weight: 700;
-  color: white;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
 }
 
 /* Vertical divider between logo and text */
@@ -292,7 +303,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   position: relative;
   height: 420px;
   overflow: hidden;
-  background: #112e6e;
+  background: rgba(255,255,255,0.12);
 }
 
 .gv-track {
@@ -311,10 +322,13 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   align-items: center;
   justify-content: center;
 }
+.gv-slide {
+  background: rgba(255,255,255,0.12);
+}
 .gv-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -400,7 +414,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   display: flex;
   height: 90px;
   gap: 0;
-  background: #112e6e;
+  background: rgba(255,255,255,0.10);
   overflow-x: auto;
   scrollbar-width: none;
   border-top: 2px solid rgba(255,255,255,0.08);
@@ -423,7 +437,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
 .gv-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -2686,7 +2700,8 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   .tp-amenity-grid { grid-template-columns: repeat(2, 1fr); }
   /* tab-btn pill styles handled in the 1023px block above */
   .header-inner { padding: 0 16px; height: 66px; }
-  .logo-wrap { width: 44px; height: 44px; }
+  .logo-wrap { width: 48px; height: 42px; }
+  .logo-fallback { width: 44px; height: 38px; }
   .brand-name { font-size: 1.1rem; letter-spacing: 0.04em; }
   .modal-body { padding: 16px 18px 20px; }
   .modal-header { padding: 18px 18px 14px; }

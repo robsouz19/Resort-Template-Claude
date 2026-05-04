@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
-  <!-- Mountain peaks -->
-  <polygon points="60,55 85,18 110,55" fill="#1e4fa3" opacity="0.9"/>
-  <polygon points="90,55 112,28 134,55" fill="#d4a94a" opacity="0.95"/>
-  <!-- Sun arc -->
-  <path d="M 62 54 Q 97 10 138 54" fill="none" stroke="#d4a94a" stroke-width="2.5" opacity="0.5" stroke-dasharray="4 3"/>
-  <!-- Resort name text -->
-  <text x="100" y="72" text-anchor="middle"
-        font-family="Georgia, serif"
-        font-size="13" font-weight="700"
-        fill="#1e4fa3" letter-spacing="3">RESORT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <!-- Back mountain -->
+  <polygon points="55,62 88,14 121,62" fill="#1e4fa3" opacity="0.85"/>
+  <!-- Front mountain (gold) -->
+  <polygon points="95,62 124,24 153,62" fill="#d4a94a" opacity="0.95"/>
+  <!-- Sun -->
+  <circle cx="162" cy="22" r="10" fill="#d4a94a" opacity="0.9"/>
+  <line x1="162" y1="7"  x2="162" y2="3"  stroke="#d4a94a" stroke-width="2" opacity="0.7"/>
+  <line x1="172" y1="12" x2="175" y2="9"  stroke="#d4a94a" stroke-width="2" opacity="0.7"/>
+  <line x1="177" y1="22" x2="181" y2="22" stroke="#d4a94a" stroke-width="2" opacity="0.7"/>
+  <!-- Resort wordmark -->
+  <text x="120" y="76" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="15" font-weight="700"
+        fill="#1e4fa3" letter-spacing="5">RESORT</text>
 </svg>

@@ -81,8 +81,8 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
 }
 
 .logo-wrap {
-  width: 64px;
-  height: 56px;
+  width: 120px;
+  height: 64px;
   flex-shrink: 0;
   position: relative;
   display: flex;
@@ -90,31 +90,29 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   justify-content: center;
 }
 .logo-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 1px 6px rgba(0,0,0,0.18));
 }
 .logo-fallback {
   display: none;
-  width: 58px;
-  height: 52px;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
   border: 1.5px dashed rgba(30,79,163,0.35);
   border-radius: 8px;
 }
 .logo-fallback i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--gold);
   filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));
 }
 .logo-fallback .logo-placeholder-text {
-  font-size: 0.45rem;
+  font-size: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -133,7 +131,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
 }
 .brand-name {
   font-family: 'Playfair Display', serif;
-  font-size: 1.45rem;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.15;
@@ -2700,8 +2698,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   .tp-amenity-grid { grid-template-columns: repeat(2, 1fr); }
   /* tab-btn pill styles handled in the 1023px block above */
   .header-inner { padding: 0 16px; height: 66px; }
-  .logo-wrap { width: 48px; height: 42px; }
-  .logo-fallback { width: 44px; height: 38px; }
+  .logo-wrap { width: 80px; height: 48px; }
   .brand-name { font-size: 1.1rem; letter-spacing: 0.04em; }
   .modal-body { padding: 16px 18px 20px; }
   .modal-header { padding: 18px 18px 14px; }

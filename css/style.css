@@ -51,21 +51,14 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(180deg, #1e4fa3 0%, #112e6e 100%);
-  /* 3D raised feel: strong top highlight, deep bottom shadow */
-  border-top: 3px solid #2e7cb8;
-  border-bottom: 3px solid #081a10;
-  box-shadow:
-    0 2px 0 rgba(255,255,255,0.06) inset,
-    0 6px 24px rgba(0,0,0,0.45),
-    0 2px 6px rgba(0,0,0,0.3);
+  background: #ffffff;
+  border-top: 3px solid var(--gold);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
   transition: box-shadow var(--transition);
 }
 .site-header.scrolled {
-  box-shadow:
-    0 2px 0 rgba(255,255,255,0.06) inset,
-    0 10px 32px rgba(0,0,0,0.55),
-    0 3px 8px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .header-inner {
@@ -93,12 +86,9 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,0.15);
-  /* subtle inner glow so it pops off the dark header */
-  box-shadow:
-    0 2px 8px rgba(0,0,0,0.4),
-    0 0 0 1px rgba(255,255,255,0.06) inset;
-  background: rgba(255,255,255,0.08);
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  background: var(--bg);
   position: relative;
 }
 .logo-img {
@@ -137,22 +127,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   letter-spacing: 0.06em;
   line-height: 1.15;
   white-space: nowrap;
-  /* Shimmering gold gradient */
-  background: linear-gradient(
-    105deg,
-    #f5e27a 0%,
-    #d4af37 25%,
-    #fff8dc 50%,
-    #d4af37 75%,
-    #b8860b 100%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: goldShimmer 4s linear infinite;
-  /* Soft glow behind the letters */
-  filter: drop-shadow(0 1px 6px rgba(212,175,55,0.45));
+  color: var(--navy);
 }
 @keyframes goldShimmer {
   0%   { background-position: 0% center; }
@@ -163,11 +138,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: transparent;
-  background: linear-gradient(90deg, rgba(212,175,55,0.55), rgba(255,248,220,0.75), rgba(212,175,55,0.55));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-muted);
   position: relative;
   padding-left: 18px;
 }
@@ -179,10 +150,7 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   font-size: 0.45rem;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(135deg, #d4af37, #f5e27a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--gold);
 }
 
 /* ── Right: Phone + CTA ── */
@@ -195,13 +163,13 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(255,255,255,0.65);
+  color: var(--text-muted);
   font-size: 0.85rem;
   font-weight: 500;
   transition: color var(--transition);
   white-space: nowrap;
 }
-.nav-phone:hover { color: rgba(255,255,255,0.95); }
+.nav-phone:hover { color: var(--text); }
 .nav-phone i { font-size: 0.75rem; color: var(--gold); }
 
 .btn-book-now {
